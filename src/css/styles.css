@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --red: hsl(0, 100%, 74%);
+  --green: hsl(154, 59%, 51%);
+  --blue: hsl(248, 32%, 49%);
+  --darkBlue: hsl(249, 10%, 26%);
+  --grayishBlue: hsl(246, 25%, 77%);
+  --gray: hsl(252, 2%, 51%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  margin: 0px;
+  font-family: "Poppins", sans-serif;
+}
+
+.backgroundFont {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../images/bg-intro-desktop.png");
+  background-color: var(--red);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 10rem 1fr;
+  height: 97vh;
+}
+
+.leftContainer {
+  display: inline-block;
+  justify-content: center;
+  align-self: center;
+}
+.boldText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 3.5rem;
+  color: white;
+}
+.textExperienced {
+  display: flex;
+  color: white;
+  font-size: 1.2rem;
+  padding-left: 15.2rem;
+}
+
+.rightContainer {
+  display: inline-block;
+  align-self: center;
+  grid-column: 3;
+}
+
+.btnTry {
+  background-color: var(--blue);
+  border: 1px solid var(--blue);
+  height: 3.5rem;
+  width: 33.75rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 11px 6px -1px rgba(0, 0, 0, 0.58);
+  color: white;
+  cursor: pointer;
+  margin-bottom: 0.8rem;
+}
+
+.paragrapheM {
+  display: inline-flex;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+.paragraphem {
+  display: inline-flex;
+  margin: 0;
+  margin-right: 0.2rem;
+  font-weight: bold;
+}
+
+input {
+  display: block;
+  margin-bottom: 1rem;
+  height: 3.5rem;
+  width: 28.75rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--grayishBlue);
+  color: var(--darkBlue);
+  justify-self: center;
+  padding-left: 1rem;
+}
+
+input::-webkit-input-placeholder {
+  color: var(--gray);
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+input:focus {
+  border: 1px solid var(--darkBlue);
+  color: var(--darkBlue);
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+.input:required {
+  background-image: url("../images/icon-error.svg");
+  background-position: right;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+input:first-child {
+  margin-top: 2rem;
+}
+
+.containerForm {
+  display: grid;
+}
+
+.form {
+  background-color: white;
+  border-radius: 0.5rem;
+  display: inline-block;
+  margin-top: 0.8rem;
+  width: 33.75rem;
+  padding-bottom: 3rem;
+}
+
+.btnForm {
+  height: 3.5rem;
+  width: 30rem;
+  margin-left: 30px;
+  background-color: var(--green);
+  border-radius: 0.5rem;
+  border: 1px solid var(--green);
+  font-weight: bold;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.subText {
+  color: var(--grayishBlue);
+  font-size: 0.8rem;
+  text-align: center;
+  margin-top: 0.95rem;
+}
+
+.subTerms {
+  text-decoration: none;
+  color: var(--red);
+}
+
+@media (max-width: 367px) {
+  .backgroundFont {
+    background-image: url("../images/bg-intro-mobile.png");
+  }
+  .container {
+    grid-template-columns: 100vw;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .rightContainer {
+    display: flex;
+    flex-direction: column;
+    grid-row: 2;
+    grid-column: 1;
+    align-items: center;
+  }
+
+  .leftContainer {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+  }
+
+  .boldText {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 2.2rem;
+    color: white;
+  }
+  .textExperienced {
+    padding: 0px;
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 60px;
+  }
+
+  .btnTry {
+    width: 19.75rem;
+    height: 5.375rem;
+  }
+
+  .form {
+    width: 19.75rem;
+  }
+  .btnForm {
+    width: 18.75rem;
+    margin: 0;
+  }
+
+  input {
+    width: 17rem;
+  }
+
+  .containerForm {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .form {
+    margin-bottom: 1rem;
+  }
+  .paragrapheM {
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

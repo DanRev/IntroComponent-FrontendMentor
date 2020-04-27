@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+  </head>
+  <body>
+    <div class="backgroundFont">
+      <div class="container">
+        <div class="leftContainer">
+          <h1 class="boldText">
+            Learn to code by <br />
+            watching others
+          </h1>
+          <p class="textExperienced">
+            See how experienced developers solve problems in real-time. Watching
+            scripted tutorials is great, but understanding how developers think
+            is invaluable.
+          </p>
+        </div>
+        <div class="rightContainer">
+          <button class="btnTry">
+            <span class="paragrapheM">
+              <p class="paragraphem">
+                Try it free 7 days
+              </p>
+              then $20/mo. thereafter
+            </span>
+          </button>
+          <form action="submit" class="form">
+            <div class="containerForm">
+              <input
+                id="FirstName"
+                type="text"
+                placeholder="First Name"
+                required
+              />
+              <input
+                id="LastName"
+                type="text"
+                placeholder="Last Name"
+                required
+              />
+              <input
+                id="Email"
+                type="email"
+                placeholder="Email Address"
+                required
+                pattern="/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.([a-zA-Z]{2,4})+$/"
+              />
+              <input
+                id="Password"
+                type="password"
+                placeholder="Password"
+                required
+              />
+              <button onClick="checkFields()" class="btnForm">
+                CLAIM YOUR FREE TRIAL
+              </button>
+              <p class="subText">
+                By clicking the button, you are agreeing to our
+                <a href="#" class="subTerms">Terms and Services</a>
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <footer>
+        <p class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by
+          <a href="https://github.com/DanRev" target="_blank"
+            >Daniel Beltran Gomez</a
+          >.
+        </p>
+      </footer>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>

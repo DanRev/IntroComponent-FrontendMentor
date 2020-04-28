@@ -167,7 +167,7 @@ input:first-child {
   }
   .container {
     grid-template-columns: 100vw;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
   }
 
   .rightContainer {
@@ -234,5 +234,6 @@ input:first-child {
 
   footer {
     margin-top: 112px;
+    grid-row: 3;
   }
 }

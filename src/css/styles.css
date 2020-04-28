@@ -235,5 +235,6 @@ input:first-child {
   footer {
     margin-top: 112px;
     grid-row: 3;
+    background-color: var(--red);
   }
 }
